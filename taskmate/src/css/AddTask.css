@@ -1,0 +1,58 @@
+.addtask {
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.addtask form {
+  padding: 1rem;
+  width: 100%;
+  max-width: 600px;
+  list-style: none;
+  border: 1px solid var(--white-border);
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.addtask input {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  width: 50%;
+  outline: none;
+  border: 1px solid var(--white-border);
+  border-radius: 0.5rem;
+}
+
+.addtask select {
+  width: 5rem;
+  height: 1.8rem;
+  border-radius: .5rem;
+}
+
+.addtask button {
+  width: 5rem;
+  height: 1.8rem;
+  color: #fff;
+  background-color: var(--blue-button);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.addtask span {
+  width: 5rem;
+  height: 1.8rem;
+  color: var(--white-text);
+  background-color: var(--red-button);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
