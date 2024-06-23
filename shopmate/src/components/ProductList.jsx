@@ -1,26 +1,15 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "../css/ProductList.css";
+import { useFetch } from "../hooks/useFetch";
+import Loading from "../assets/loading.gif";
 
 export default function ProductList() {
-  const [products, setProducts] = useState([]);
   const [url, setUrl] = useState("http://localhost:8000/products");
-  const [counter, setCounter] = useState(0);
-
-  useEffect(() => {
-    fetch(url)
-      .then((response) => response.json())
-      .then((data) => setProducts(data));
-  }, [url]);
-
-  useEffect(() => {
-    console.log(counter);
-  }, [counter]);
+  const { data: products, loading, error } = useFetch(url);
 
   return (
     <section>
       <div className="filter">
-        <button onClick={() => setCounter(counter + 1)}>{counter}</button>
-        <button onClick={() => setCounter(counter - 1)}>{counter}</button>
         <button onClick={() => setUrl("http://localhost:8000/products")}>
           All
         </button>
@@ -37,19 +26,23 @@ export default function ProductList() {
           Unavailable
         </button>
       </div>
+      {loading && <p className="loading">Loading products...</p>}
 
-      {products.map((product) => (
-        <div className="card" key={product.id}>
-          <p className="id">{product.id}</p>
-          <p className="name">{product.name}</p>
-          <p className="info">
-            <span>${product.price}</span>
-            <span className={product.in_stock ? "instock" : "unavailable"}>
-              {product.in_stock ? "In Stock" : "Unavailable"}
-            </span>
-          </p>
-        </div>
-      ))}
+      {error && <p>{error}</p>}
+
+      {products &&
+        products.map((product) => (
+          <div className="card" key={product.id}>
+            <p className="id">{product.id}</p>
+            <p className="name">{product.name}</p>
+            <p className="info">
+              <span>${product.price}</span>
+              <span className={product.in_stock ? "instock" : "unavailable"}>
+                {product.in_stock ? "In Stock" : "Unavailable"}
+              </span>
+            </p>
+          </div>
+        ))}
     </section>
   );
 }
