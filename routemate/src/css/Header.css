@@ -1,0 +1,39 @@
+header {
+  margin: 0 auto;
+  padding: 1rem;
+  width: 100%;
+  max-width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--white-border);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo img {
+  width: 2.5rem;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.link {
+  padding: 0.5rem;
+  color: var(--black-text);
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: .5s all;
+}
+
+.link:hover {
+  background-color: aliceblue;
+}
+
