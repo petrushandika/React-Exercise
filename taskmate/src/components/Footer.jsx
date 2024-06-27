@@ -1,9 +1,9 @@
 import "../css/Footer.css"
 
-export const Footer = () => {
-    return (
-        <footer>
-            2024 - TaskMate
-        </footer>
-    )
+export default function Footer() {
+  return (
+    <footer>
+      <p>&copy; Copyright by Petrus Handika</p>
+    </footer>
+  );
 }

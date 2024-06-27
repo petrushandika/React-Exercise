@@ -1,58 +1,36 @@
-.addtask {
-  padding: 1rem;
-  margin: 1rem;
+.addTask {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.addtask form {
-  padding: 1rem;
+.addTask form {
+  padding: 0.5rem 1rem;
+  margin: 3rem 0;
   width: 100%;
-  max-width: 600px;
-  list-style: none;
-  border: 1px solid var(--white-border);
-  border-radius: 0.5rem;
+  max-width: 40%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
+  box-shadow: var(--box-shadow);
+  border-radius: 0.2rem;
 }
 
-.addtask input {
-  margin: 0.5rem;
-  padding: 0.5rem;
-  width: 50%;
-  outline: none;
-  border: 1px solid var(--white-border);
-  border-radius: 0.5rem;
-}
-
-.addtask select {
-  width: 5rem;
-  height: 1.8rem;
-  border-radius: .5rem;
-}
-
-.addtask button {
-  width: 5rem;
-  height: 1.8rem;
-  color: #fff;
-  background-color: var(--blue-button);
+.addTask input {
+  flex: 1;
   border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
+  outline: none;
+  background-color: transparent;
 }
 
-.addtask span {
-  width: 5rem;
-  height: 1.8rem;
+.addTask button {
+  padding: 0.5rem 1rem;
   color: var(--white-text);
-  background-color: var(--red-button);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: var(--green-button);
+  box-sizing: border-box;
+  border: none;
   border-radius: 0.5rem;
   cursor: pointer;
 }

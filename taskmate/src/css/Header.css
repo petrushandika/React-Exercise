@@ -1,15 +1,65 @@
 header {
+  margin: 0.5rem auto;
   padding: 1rem;
+  width: 100%;
+  max-width: 80%;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid var(--white-border);
+  align-items: center;
+  border-radius: 0.2rem;
+  box-shadow: var(--box-shadow);
 }
 
-img {
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo img {
   width: 5rem;
 }
 
-a {
-  color: #000;
-  text-decoration: none;
+.logo span {
+  color: var(--gray-text);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.themeSelector span {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  transition-delay: 0.2s;
+}
+
+.themeSelector {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.light {
+  background-color: var(--primary-background);
+}
+
+.medium {
+  background-color: var(--secondary-background);
+}
+
+.dark {
+  color: var(--white-text);
+  background-color: var(--tertiary-background);
+}
+
+.gradient {
+  color: var(--white-text);
+  background: linear-gradient(120deg, #23debc, #2770ce);
+}
+
+.themeSelector span:hover {
+  transform: scale(1.2);
 }
