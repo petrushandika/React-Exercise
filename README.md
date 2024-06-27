@@ -2,7 +2,7 @@
 <table>
   <tr><td>
 
-| Day |                Name             |
+| No |                Name             |
 | --- | :-----------------------------: |
 | 1   | [Task Mate](https://taskmate-exercise.netlify.app/) |
 | 2   |  |
