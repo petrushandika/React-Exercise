@@ -1,12 +1,12 @@
-export { Home } from "./Home";
-export { Admin } from "./Admin";
+export { default as Home } from "./Home";
+export { default as Admin } from "./Admin";
 
-export { ProductList } from "./ProductList";
-export { ProductDetail } from "./ProductDetail";
+export { default as ProductList } from "./ProductList";
+export { default as ProductDetail } from "./ProductDetail";
 
-export { Contact } from "./Contact/Contact";
-export { ContactIn } from "./Contact/ContactIn";
-export { ContactUs } from "./Contact/ContactUs";
-export { ContactEu } from "./Contact/ContactEu";
+export { default as Contact } from "./Contact/Contact";
+export { default as ContactIn } from "./Contact/ContactIn";
+export { default as ContactUs } from "./Contact/ContactUs";
+export { default as ContactEu } from "./Contact/ContactEu";
 
-export { PageNotFound } from "./PageNotFound";
+export { default as PageNotFound } from "./PageNotFound";
