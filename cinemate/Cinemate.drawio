@@ -1,0 +1,103 @@
+<mxfile host="65bd71144e">
+    <diagram id="T58w3HEx5Yb5Hx2UFmLL" name="Page-1">
+        <mxGraphModel dx="784" dy="611" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="38" value="" style="edgeStyle=none;html=1;verticalAlign=middle;" parent="1" source="2" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="Start" style="ellipse;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;flipH=1;flipV=0;container=0;verticalAlign=middle;direction=west;" parent="1" vertex="1">
+                    <mxGeometry x="65" y="280" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="edgeStyle=none;html=1;verticalAlign=middle;" parent="1" source="4" target="7" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Assets, Components, Pages, and Routes" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=middle;flipV=0;flipH=1;direction=west;" parent="1" vertex="1">
+                    <mxGeometry x="265" y="290" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="edgeStyle=none;html=1;verticalAlign=middle;" parent="1" source="7" target="9" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="API Documentation" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=middle;flipV=0;flipH=1;direction=west;" parent="1" vertex="1">
+                    <mxGeometry x="465" y="290" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="" style="edgeStyle=none;html=1;verticalAlign=middle;" parent="1" source="9" target="11" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="UI Design (Tailwind and Flowbite)" style="whiteSpace=wrap;html=1;rounded=1;verticalAlign=middle;flipV=0;flipH=1;direction=west;" parent="1" vertex="1">
+                    <mxGeometry x="665" y="290" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="edgeStyle=none;html=1;verticalAlign=middle;" parent="1" source="11" target="13" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Navigation Structure (Header and Footer)" style="whiteSpace=wrap;html=1;rounded=1;verticalAlign=middle;flipV=0;flipH=1;direction=west;" parent="1" vertex="1">
+                    <mxGeometry x="665" y="420" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="" style="edgeStyle=none;html=1;verticalAlign=middle;" parent="1" source="13" target="15" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Dark Mode Integration" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=middle;flipV=0;flipH=1;direction=west;" parent="1" vertex="1">
+                    <mxGeometry x="465" y="420" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="" style="edgeStyle=none;html=1;verticalAlign=middle;" parent="1" source="15" target="17" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Movie List Structure" style="whiteSpace=wrap;html=1;rounded=1;verticalAlign=middle;flipV=0;flipH=1;direction=west;" parent="1" vertex="1">
+                    <mxGeometry x="265" y="420" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="" style="edgeStyle=none;html=1;verticalAlign=middle;" parent="1" source="17" target="21" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="API Fetch: Movie List" style="whiteSpace=wrap;html=1;rounded=1;verticalAlign=middle;flipV=0;flipH=1;direction=west;" parent="1" vertex="1">
+                    <mxGeometry x="65" y="420" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="" style="edgeStyle=none;html=1;verticalAlign=middle;" parent="1" source="21" target="23" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="Custom Hook: useFetch" style="whiteSpace=wrap;html=1;rounded=1;verticalAlign=middle;flipV=0;flipH=1;direction=west;" parent="1" vertex="1">
+                    <mxGeometry x="65" y="540" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="" style="edgeStyle=none;html=1;verticalAlign=middle;" parent="1" source="23" target="25" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="API Fetch: Movie Search" style="whiteSpace=wrap;html=1;rounded=1;verticalAlign=middle;flipV=0;flipH=1;direction=west;" parent="1" vertex="1">
+                    <mxGeometry x="265" y="540" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="" style="edgeStyle=none;html=1;verticalAlign=middle;" parent="1" source="25" target="27" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="Tailwind Customization" style="whiteSpace=wrap;html=1;rounded=1;verticalAlign=middle;flipV=0;flipH=1;direction=west;" parent="1" vertex="1">
+                    <mxGeometry x="465" y="540" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="" style="edgeStyle=none;html=1;verticalAlign=middle;" parent="1" source="27" target="29" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="Page Not Found" style="whiteSpace=wrap;html=1;rounded=1;verticalAlign=middle;flipV=0;flipH=1;direction=west;" parent="1" vertex="1">
+                    <mxGeometry x="665" y="540" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="" style="edgeStyle=none;html=1;verticalAlign=middle;" parent="1" source="29" target="31" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="Individual Movie Information" style="whiteSpace=wrap;html=1;rounded=1;verticalAlign=middle;flipV=0;flipH=1;direction=west;" parent="1" vertex="1">
+                    <mxGeometry x="665" y="660" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="" style="edgeStyle=none;html=1;verticalAlign=middle;" parent="1" source="31" target="33" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="Scroll Restoration" style="whiteSpace=wrap;html=1;rounded=1;verticalAlign=middle;flipV=0;flipH=1;direction=west;" parent="1" vertex="1">
+                    <mxGeometry x="465" y="660" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="" style="edgeStyle=none;html=1;verticalAlign=middle;" parent="1" source="33" target="35" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="Dynamic Page Title" style="whiteSpace=wrap;html=1;rounded=1;verticalAlign=middle;flipV=0;flipH=1;direction=west;" parent="1" vertex="1">
+                    <mxGeometry x="265" y="660" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="Deployment" style="ellipse;whiteSpace=wrap;html=1;rounded=1;verticalAlign=middle;flipV=0;flipH=1;direction=west;" parent="1" vertex="1">
+                    <mxGeometry x="65" y="650" width="120" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
