@@ -5,7 +5,7 @@
 | No |                Name             |
 | --- | :-----------------------------: |
 | 1   | [Task Mate](https://taskmate-exercise.netlify.app/) |
-| 2   |  |
+| 2   | [Cinemate](https://cinemate-exercise.netlify.app/) |
 | 3   |  |
 | 4   |  |
 | 5   |  |
