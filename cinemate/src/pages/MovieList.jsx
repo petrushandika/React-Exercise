@@ -1,7 +1,7 @@
 import { Card } from "../components";
 import useFetch from "../hooks/useFetch";
 
-export default function MovieList({ apiPath }) {
+export default function MovieList({apiPath}) {
   const { data: movies } = useFetch(apiPath);
 
   return (
