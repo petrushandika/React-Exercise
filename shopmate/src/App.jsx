@@ -1,10 +1,21 @@
 import "./App.css";
-import ProductList from "../src/components/ProductList";
+import "./index.css";
+import { Header, Footer } from "./components";
+import AllRoutes from "./routes/AllRoutes";
+import ErrorBoundary from "./components/ErrorBoundary";
 
-export default function App() {
+function App() {
   return (
     <div className="App">
-      <ProductList />
+      <main>
+        <Header />
+        <ErrorBoundary>
+          <AllRoutes />
+        </ErrorBoundary>
+        <Footer />
+      </main>
     </div>
   );
 }
+
+export default App;
