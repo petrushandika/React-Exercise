@@ -1,7 +1,9 @@
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../assets/code.png";
+import { useCart } from "../context/CartContext";
 
 export default function Header() {
+  const { total, cartList } = useCart ();
   return (
     <header className="flex justify-between items-center border-b-2 pb-2">
       <Link className="flex items-center gap-3" to="/">
@@ -17,7 +19,7 @@ export default function Header() {
         </NavLink>
       </nav>
       <Link to="/cart">
-        <span className="font-bold">Cart: 2</span>
+        <span className="font-bold">Cart: {cartList.length}</span>
       </Link>
     </header>
   );
