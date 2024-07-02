@@ -1,8 +1,9 @@
+import { useDispatch } from "react-redux";
+import { remove } from "../store/cartSlice";
 import { Link } from "react-router-dom";
-import { useCart } from "../context/CartContext";
 
 export default function CartCard({ product }) {
-  const { removeFromCart } = useCart();
+  const dispatch = useDispatch();
   const { id, image, name, price } = product;
 
   return (
@@ -21,7 +22,7 @@ export default function CartCard({ product }) {
       <div>
         <button
           className="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800"
-          onClick={() => removeFromCart(product)}
+          onClick={() => dispatch(remove(product))}
         >
           Remove
         </button>

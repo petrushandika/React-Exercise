@@ -1,9 +1,9 @@
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../assets/code.png";
-import { useCart } from "../context/CartContext";
-
+import { useSelector } from "react-redux";
 export default function Header() {
-  const { total, cartList } = useCart ();
+  const cartList = useSelector((state) => state.cartState.cartList);
+
   return (
     <header className="flex justify-between items-center border-b-2 pb-2">
       <Link className="flex items-center gap-3" to="/">

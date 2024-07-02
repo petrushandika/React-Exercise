@@ -1,12 +1,7 @@
 import { ProductCard } from "../components";
-// import useFetch from "../hooks/useFetch";
 import useTitle from "../hooks/useTitle";
 
 export default function Home() {
-  // const { data: products } = useFetch();
-
-  // console.log(`Products Data ${products}`);
-
   useTitle("Home");
 
   const products = [
