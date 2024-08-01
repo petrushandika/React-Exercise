@@ -1,6 +1,7 @@
 import { BiArrowBack } from "react-icons/bi";
 import People from "../../../assets/people.png";
 import { Button } from "../../../components/Elements/Button";
+import { Link } from "react-router-dom";
 
 export const Hero = () => {
   return (
@@ -19,13 +20,17 @@ export const Hero = () => {
           of public Domain Books With Our Editors
         </p>
         <div className="flex gap-3">
-          <Button
-            text="Explore now"
-            className={"text-black border border-black rounded-3xl px-5 py-2"}
-          />
-          <Button className="bg-black rounded-3xl px-3 py-2">
-            <BiArrowBack className="text-white size-6 transform rotate-180" />
-          </Button>
+          <Link to="/products">
+            <Button
+              text="Explore now"
+              className={"text-black border border-black rounded-3xl px-5 py-2"}
+            />
+          </Link>
+          <Link to="/products">
+            <Button className="bg-black rounded-3xl px-3 py-2">
+              <BiArrowBack className="text-white size-6 transform rotate-180" />
+            </Button>
+          </Link>
         </div>
       </div>
       <div className="w-1/2">

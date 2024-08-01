@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Johnson",
+    "avatar": "../assets/person.jpg",
+    "job": "Software Engineer",
+    "title": "Amazing selection of books",
+    "comment": "I found a wide variety of books that I couldn't find anywhere else. The staff was very helpful and knowledgeable."
+  },
+  {
+    "id": 2,
+    "name": "Michael Brown",
+    "avatar": "../assets/person.jpg",
+    "job": "Project Manager",
+    "title": "Great customer service",
+    "comment": "The customer service was exceptional. They helped me find exactly what I needed and provided great recommendations."
+  },
+  {
+    "id": 3,
+    "name": "Emily Davis",
+    "avatar": "../assets/person.jpg",
+    "job": "Graphic Designer",
+    "title": "Cozy atmosphere",
+    "comment": "The bookstore has a cozy atmosphere that makes you want to stay and read. The coffee shop inside is a nice touch."
+  },
+  {
+    "id": 4,
+    "name": "James Smith",
+    "avatar": "../assets/person.jpg",
+    "job": "UX Designer",
+    "title": "Highly recommended",
+    "comment": "I highly recommend this bookstore to anyone looking for a great selection of books and a pleasant shopping experience."
+  }
+]

@@ -1,28 +1,31 @@
-import React from "react";
 import PropTypes from "prop-types";
-import Book from "../../assets/book.png";
+import { Link } from "react-router-dom";
 import { Button } from "./Button";
-import { ProductImage } from "./ProductImage";
 
 export const ProductCard = ({
-  book,
+  id,
+  image,
   alt,
-  bookLink,
-  heading,
+  title,
   description,
   price,
+  className,
 }) => {
   return (
     <div className="flex flex-row gap-5">
       <div className="flex flex-row items-center">
-        <ProductImage
-          book={Book}
-          bookLink={"/productdetail"}
-          className={"80 rounded"}
-        />
+        <Link to={`product/detail/${id}`}>
+          <img
+            src={image}
+            alt={alt}
+            className={className}
+          />
+        </Link>
         <div className="flex flex-col justify-center h-5/6">
           <div className="flex flex-col gap-2 justify-center p-2 rounded-r bg-backgroundsecondary">
-            <h3 className="font-medium">{heading}</h3>
+            <Link to={`product/detail/${id}`}>
+              <h3 className="font-medium">{title}</h3>
+            </Link>
             <p className="text-sm">{description}</p>
             <p className="text-sm">Rp. {price}</p>
             <Button
@@ -37,12 +40,18 @@ export const ProductCard = ({
 };
 
 ProductCard.propTypes = {
-  bookLink: PropTypes.string,
-  heading: PropTypes.node,
+  id: PropTypes.number.isRequired,
+  image: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  title: PropTypes.node,
   description: PropTypes.string,
-  price: PropTypes.number,
+  price: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  className: PropTypes.string,
 };
 
 ProductCard.defaultProps = {
+  title: "",
   description: "",
+  price: "",
+  className: "",
 };

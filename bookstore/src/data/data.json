@@ -1,0 +1,130 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "image": "https://cdn.gramedia.com/uploads/picture_meta/2024/6/25/ypdppl5jhml53uwywh7fvt.jpg",
+      "title": "Niallgina",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quasi, molestias nihil minima ea",
+      "price": "0"
+    },
+    {
+      "id": 2,
+      "image": "https://cdn.gramedia.com/uploads/picture_meta/2024/6/20/babxtmnhzpdcb2f64b8rpj.jpg",
+      "title": "Anatomi Pemikiran Sigmund Freud & Carl Jung",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quasi, molestias nihil minima ea",
+      "price": "190,000"
+    },
+    {
+      "id": 3,
+      "image": "https://cdn.gramedia.com/uploads/picture_meta/2024/6/19/hsmxkikylteoey6sctf8x5.jpg",
+      "title": "Graph Database Applications and Concepts",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quasi, molestias nihil minima ea",
+      "price": "145,000"
+    },
+    {
+      "id": 4,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81OdwZ9l2mL.jpg",
+      "title": "To Kill a Mockingbird",
+      "description": "A novel by Harper Lee published in 1960. Instantly successful, it won the Pulitzer Prize and has become a classic of modern American literature.",
+      "price": "160,000"
+    },
+    {
+      "id": 5,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81vpjTYU-3L.jpg",
+      "title": "The Great Gatsby",
+      "description": "A 1925 novel written by American author F. Scott Fitzgerald that follows a cast of characters living in the fictional towns of West Egg and East Egg on prosperous Long Island in the summer of 1922.",
+      "price": "220,000"
+    },
+    {
+      "id": 6,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81AFocWmJ1L.jpg",
+      "title": "The Catcher in the Rye",
+      "description": "A novel by J. D. Salinger, partially published in serial form in 1945-1946 and as a novel in 1951. It is a story about adolescent alienation and loss.",
+      "price": "205,000"
+    },
+    {
+      "id": 7,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/91zBIbNreJL.jpg",
+      "title": "The Hobbit",
+      "description": "A children's fantasy novel by English author J. R. R. Tolkien. It was published in 1937 to wide critical acclaim.",
+      "price": "175,000"
+    },
+    {
+      "id": 8,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71vNx4YqTiL.jpg",
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "description": "A fantasy novel written by British author J. K. Rowling. It is the first book in the Harry Potter series and Rowling's debut novel.",
+      "price": "140,000"
+    },
+    {
+      "id": 9,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81iqZ2HHD-L.jpg",
+      "title": "The Lord of the Rings",
+      "description": "An epic high-fantasy novel written by English author and scholar J. R. R. Tolkien. The story began as a sequel to Tolkien's 1937 fantasy novel The Hobbit.",
+      "price": "405,000"
+    },
+    {
+      "id": 10,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81bGqRuOfvL.jpg",
+      "title": "The Alchemist",
+      "description": "A novel by Brazilian author Paulo Coelho that was first published in 1988. Originally written in Portuguese, it became a widely translated international bestseller.",
+      "price": "155,000"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Sarah Johnson",
+      "avatar": "../assets/person.jpg",
+      "job": "Software Engineer",
+      "title": "Amazing selection of books",
+      "comment": "I found a wide variety of books that I couldn't find anywhere else. The staff was very helpful and knowledgeable."
+    },
+    {
+      "id": 2,
+      "name": "Michael Brown",
+      "avatar": "../assets/person.jpg",
+      "job": "Project Manager",
+      "title": "Great customer service",
+      "comment": "The customer service was exceptional. They helped me find exactly what I needed and provided great recommendations."
+    },
+    {
+      "id": 3,
+      "name": "Emily Davis",
+      "avatar": "../assets/person.jpg",
+      "job": "Graphic Designer",
+      "title": "Cozy atmosphere",
+      "comment": "The bookstore has a cozy atmosphere that makes you want to stay and read. The coffee shop inside is a nice touch."
+    },
+    {
+      "id": 4,
+      "name": "James Smith",
+      "avatar": "../assets/person.jpg",
+      "job": "UX Designer",
+      "title": "Highly recommended",
+      "comment": "I highly recommend this bookstore to anyone looking for a great selection of books and a pleasant shopping experience."
+    }
+  ],
+  "faq": [
+    {
+      "id": 1,
+      "question": "Why should I use CodeBook?",
+      "answer": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus earum dicta nesciunt, nulla alias consequuntur cumque incidunt saepe mollitia esse! Magni praesentium delectus excepturi nostrum illo repellendus cum eius neque, aperiam dolores quaerat quis dolore magnam doloremque minus sint nemo qui necessitatibus at. Perspiciatis, corrupti cum labore quos odio porro!"
+    },
+    {
+      "id": 2,
+      "question": "Can I access my eBook on mobile?",
+      "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At accusamus nobis tempore perferendis qui, quam, atque reprehenderit vero quaerat, assumenda pariatur eveniet. Maxime eaque, neque corrupti ad minus repudiandae consectetur!"
+    },
+    {
+      "id": 3,
+      "question": "Do you offer refunds?",
+      "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse iste dolor deserunt expedita quam fugit et inventore amet pariatur. Animi."
+    },
+    {
+      "id": 4,
+      "question": "Do you support International payments?",
+      "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse iste dolor deserunt expedita quam fugit et inventore amet pariatur. Animi."
+    }
+  ]
+}

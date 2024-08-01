@@ -1,27 +1,31 @@
-import Book from "../../assets/book.png";
+import { useEffect, useState } from "react";
 
 export const ProductDetail = () => {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    async function fetchProducts() {
+      const response = await fetch("http://localhost:8000/products");
+      const data = await response.json();
+      setProducts(data);
+    }
+    fetchProducts();
+  }, []);
+
   return (
     <main>
       <div className="flex flex-row gap-10">
         <div>
           <img
             className="rounded"
-            src={Book}
-            alt=""
+            src={products.image}
+            alt={products.alt}
           />
         </div>
         <div className="flex flex-col justify-center gap-5">
-          <h1 className="text-3xl font-semibold">
-            Sebuah Seni Untuk Bersikap Bodo Amat
-          </h1>
-          <p className="text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quasi
-            pariatur fuga accusamus, quisquam ducimus nisi quos hic ipsa, sunt
-            quae labore sapiente distinctio saepe sint animi. Veritatis, fugiat
-            sunt?
-          </p>
-          <p className="text-lg">Rp. 0</p>
+          <h1 className="text-3xl font-semibold">{products.title}</h1>
+          <p className="text-lg">{products.description}</p>
+          <p className="text-lg">Rp. {products.price}</p>
           <div className="flex flex-row gap-3">
             <button
               type="button"

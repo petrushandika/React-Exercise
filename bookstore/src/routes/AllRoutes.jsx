@@ -15,7 +15,7 @@ export const AllRoutes = () => {
           element={<ProductList />}
         />
         <Route
-          path="/productdetail"
+          path="product/detail/:id"
           element={<ProductDetail />}
         />
       </Routes>
