@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import Book from "../../../assets/book.png";
-import { ProductCard } from "../../../components/Elements/ProductCard";
+import { ProductCard } from "../../../components";
 import { Button } from "../../../components/Elements/Button";
+import { RandomRating } from "../../../utils/RandomRating";
 
 export const TopProduct = () => {
   const [products, setProducts] = useState([]);
@@ -22,11 +23,13 @@ export const TopProduct = () => {
         {products.slice(0, 3).map((product) => (
           <ProductCard
             key={product.id}
+            id={product.id}
             image={product.image}
             alt={product.title}
             title={product.title}
             description={product.description}
             price={product.price}
+            rating={RandomRating()}
             className={"rounded"}
           />
         ))}
