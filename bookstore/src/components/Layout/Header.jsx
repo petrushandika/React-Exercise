@@ -4,11 +4,26 @@ import { MdNightlight } from "react-icons/md";
 import { BiSearch } from "react-icons/bi";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { LuUserCircle2 } from "react-icons/lu";
+import { useEffect, useState } from "react";
 
 export const Header = () => {
+  const [darkMode, setDarkMode] = useState(
+    JSON.parse(localStorage.getItem("darkMode")) || false
+  );
+
+  useEffect(() => {
+    localStorage.setItem("darkMode", JSON.stringify(darkMode));
+
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [darkMode]);
+
   return (
     <header>
-      <nav className="bg-white dark:bg-gray-900">
+      <nav className="bg-white dark:bg-primary">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
           <div>
             <Link
@@ -29,35 +44,36 @@ export const Header = () => {
             className="hidden w-full md:block md:w-auto"
             id="navbar-default"
           >
-            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-primary dark:border-gray-700">
               <li>
                 <Link
-                  href="#"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-secondary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  to="#home"
+                  className="block py-2 px-3 text-primary rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-transparent md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:bg-clip-text"
                 >
                   Home
                 </Link>
               </li>
+
               <li>
                 <Link
-                  href="#"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-secondary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  to="#product"
+                  className="block py-2 px-3 text-primary rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-transparent md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:bg-clip-text"
                 >
                   Product
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-secondary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  to="#about"
+                  className="block py-2 px-3 text-primary rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-transparent md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:bg-clip-text"
                 >
                   About
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-secondary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  to="#faq"
+                  className="block py-2 px-3 text-primary rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-transparent md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:bg-clip-text"
                 >
                   FaQ
                 </Link>
@@ -67,25 +83,25 @@ export const Header = () => {
           <div className="flex items-center space-x-6 rtl:space-x-reverse">
             <Link
               to="/"
-              className="text-2xl text-black dark:text-white hover:underline"
+              className="text-2xl text-black dark:text-white"
             >
-              <MdNightlight />
+              <MdNightlight onClick={() => setDarkMode(!darkMode)} />
             </Link>
             <Link
               to="/"
-              className="text-2xl text-black dark:text-white hover:underline"
+              className="text-2xl text-black dark:text-white"
             >
               <BiSearch />
             </Link>
             <Link
               to="/cart"
-              className="text-2xl text-black dark:text-white hover:underline"
+              className="text-2xl text-black dark:text-white"
             >
               <HiOutlineShoppingBag />
             </Link>
             <Link
               to="/"
-              className="text-xl text-black dark:text-white hover:underline"
+              className="text-xl text-black dark:text-white"
             >
               <LuUserCircle2 />
             </Link>

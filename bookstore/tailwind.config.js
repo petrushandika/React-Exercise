@@ -11,10 +11,15 @@ module.exports = {
         other: { min: "340px", max: "1200px" },
       },
       colors: {
+        primary: "#1c1c1c",
+        secondary: "#343434",
         backgroundprimary: "#FEFEFE",
         backgroundsecondary: "#EEF2F3",
-        primary: "#FFE4C9",
-        secondary: "#EA9F58",
+        darkbg: "#1E293B",
+      },
+      backgroundImage: {
+        tertiary:
+          "linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%)",
       },
     },
   },
